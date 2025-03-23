@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .tab {
+            overflow: hidden;
+            background-color: #00008B;
+            text-align: center;
+        }
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .tab button:hover {
+            background-color: #55C4D7;
+        }
+        .tab button.active {
+            background-color: blue;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border-top: none;
+            background-color: #EDF2FB;
+            width: 60%; /* Set a fixed width for the content */
+            margin: 20px auto; /* Center the content */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #00008B;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+        .sub-header {
+            font-size: 18px;
+            font-weight: bold;
+            background-color: yellow;
+            display: inline-block;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .comment {
+            background-color: #ffffcc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 100px;
+            float: right;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Blog')">Blog</button>
+    <button class="tablinks" onclick="openTab(event, 'BookReview')">Book Review</button>
+    <button class="tablinks" onclick="openTab(event, 'ScienceNews')">Science News</button>
+</div>
+
+<div id="Blog" class="tabcontent">
+    <div class="header">The Professor's Blog</div>
+    <div class="sub-header">Posted May 23, 11:22 A.M.</div>
+    <img src="rapaa.png" alt="Blog Image">
+    <p>As I look out of my window this morning, I see the landscape I have learned to love here on Rapa Nui, which is known in 
+	some places by the name Easter Island. The grasses and shrubs are green, the sky is blue, and the old, now extinct volcanoes 
+	rise up in the background.</p>
+    <p>I am a bit sad knowing that this is my last week on the island. I have finished my field work and will be returning home. 
+	Later today, I will take a walk through the hills and say good-bye to the moai that I have been studying for the past nine months. 
+	Here is a picture of some of these massive statues.</p>
+	<p>If you have been following my blog this year, then you know that the people of Rapa Nui carved these moai hundreds of years 
+	ago. These impressive moai had been carved in a single quarry on the eastern part of the island. Some of them weighed thousands 
+	of kilos, yet the people of Rapa Nui were able to move them to locations far away from the quarry without cranes or any heavy 
+	equipment.</p>
+	<p>For years, archeologists did not know how these massive statues were moved. It remained a mystery until the 1990s, when a 
+	team of archeologists and residents of Rapa Nui demonstrated that the moai could have been transported and raised using ropes 
+	made from plants and wooden rollers and tracks made from large trees that had once thrived on the island. The mystery of the 
+	moai was solved</p>
+	<p>Another mystery remained, however. What happened to these plants and large trees that had been used to move the moai? As I 
+	said, when I look out of my window, I see grasses and shrubs and a small tree or two, but nothing that could have been used to 
+	move these huge statues. It is a fascinating puzzle, one that I will explore in future posts and lectures. Until then, you may 
+	wish to investigate the mystery yourself. I suggest you begin with a book called Collapse by Jared Diamond. This review of 
+	Collapse is a good place to start.</p>
+    <div class="comment"><strong>Traveler_14</strong> May 24, 4:31 p.m.<br> Hi Professor! I love following your work on Easter Island. I can't wait to check out Collapse!</div>
+    <div class="comment"><strong>KB_Island</strong> May 25, 9:07 a.m.<br> I also love reading about your experiences on Easter Island, however, I think there is another 
+	theory that should be considered. Check out this article: www.sciencenews.com/Polynesian_rats_Rapa_Nui</div>
+</div>
+
+<div id="BookReview" class="tabcontent">
+    <div class="header">Review of Collapse</div>
+     <p>Jared Diamond’s new book, Collapse, is a clear warning about the consequences of damaging our environment. In the book, the 
+	 author describes several civilizations that collapsed because of the choices they made and their impact on the environment. One 
+	 of the most disturbing examples in the book is Rapa Nui.</p>
+    <p>According to the author, Rapa Nui was settled by Polynesians sometime after 700 CE. They developed a thriving society of, 
+	perhaps, 15 000 people. They carved the moai, the famous statues, and used the natural resources available to them to move these 
+	huge moai to different locations around the island. When the first Europeans landed on Rapa Nui in 1722, the moai were still there,
+	but the trees were gone. The population was down to a few thousand people who were struggling to survive. Mr. Diamond writes that 
+	the people of Rapa Nui cleared the land for farming and other purposes and that they over-hunted the numerous species of sea and 
+	land birds that had lived on the island. He speculates that the dwindling natural resources led to civil wars and the collapse of 
+	Rapa Nui’s society.</p>
+    <p>The lesson of this wonderful but frightening book is that in the past, humans made the choice to destroy their environment by 
+	cutting down all the trees and hunting animal species to extinction. Optimistically, the author points out, we can choose not to 
+	make the same mistakes today. The book is written well and deserves to be read by anyone who is concerned about the environment</p>
+</div>
+
+<div id="ScienceNews" class="tabcontent">
+    <div class="header">Did Polynesian Rats Destroy Rapa Nui’s Trees?</div>
+    <h4>By Michael Kimball, Science Reporter</h4>
+    <p>In 2005, Jared Diamond published Collapse. In the book, he described the human settlement of Rapa Nui (also called Easter Island).</p>
+    <p>The book caused a huge controversy soon after its publication. Many scientists questioned Diamond’s theory of what happened on 
+	Rapa Nui. They agreed that the huge trees had disappeared by the time Europeans first arrived on the island in the 18th century, 
+	but they did not agree with Jared Diamond’s theory about the cause of the disappearance.</p>
+    <p>Now, two scientists, Carl Lipo and Terry Hunt, have published a new theory. They believe that the Polynesian rat ate the seeds 
+	of the trees, preventing new ones from growing. The rat, they believe, was brought over either accidentally or purposefully on the 
+	canoes that the first human settlers used to land on Rapa Nui.</p>
+	<p>Studies have shown that a population of rats can double every 47 days. That’s a lot of rats to feed. To support their theory, 
+	Lipo and Hunt point to the remains of palm nuts that show the gnaw marks made by rats. Of course, they acknowledge that humans did 
+	play a role in the destruction of the forests of Rapa Nui. But they believe that the Polynesian rat was an even greater culprit among 
+	a series of factors.</p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
